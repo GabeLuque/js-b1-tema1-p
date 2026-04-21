@@ -25,12 +25,18 @@
 	Fibonacci en aquesta posició, de manera que, si la instàncies al bucle for donat obtindríem els 10 primers valors 
 	d'aquesta successió.
 */
-for(let i=0; i<10;i++){
+for(let i=0; i<10; i++){
 	console.log(fibonacci(i));
 }
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function fibonacci(f_number) {
+	if (f_number < 2)	{
+		return f_number;
+	}
+	return fibonacci(f_number - 1) + fibonacci(f_number - 2);
+}
 
 
 

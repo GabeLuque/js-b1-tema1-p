@@ -32,7 +32,12 @@ console.log(evenNumbers(4,7,21,3)); //This will return [4,6,20,2]
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
-
+function evenNumbers(...numbersList) {
+  function newNumber(number) {
+    return number % 2 === 0 ? number : number - 1;
+  }
+  return numbersList.map(newNumber);
+}
 
 
 /**

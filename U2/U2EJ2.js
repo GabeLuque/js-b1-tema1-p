@@ -16,7 +16,14 @@
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function rangeOfNumbers(f_number) {
+	if (f_number < 1) {
+		return 0;
+	}
+	return f_number + rangeOfNumbers(f_number - 1);
+}
 
+console.log(rangeOfNumbers(10));
 
 
 /**

@@ -18,7 +18,16 @@ oddNumbers(7, myArray);
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
-
+function oddNumbers(f_number, f_myArray) {
+	if (f_number < 1) {
+		return f_myArray;
+	}
+	if (f_number % 2 != 0) {
+		f_myArray.push(f_number);
+	}
+	return oddNumbers(f_number - 1, f_myArray);
+}
+console.log(myArray);
 
 
 /**

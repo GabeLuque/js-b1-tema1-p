@@ -61,7 +61,12 @@ console.log(currentAge(classroomStudents));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
-
+function currentAge(f_crStudent) {
+  function calculatedYears(oneStudent) {
+    return 2023 - oneStudent.yearOfBirth;
+  }
+  return  f_crStudent.map(calculatedYears);
+}
 
 
 /**

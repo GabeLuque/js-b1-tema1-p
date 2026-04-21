@@ -69,6 +69,13 @@ let planets = [
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
 
+function planetDates(f_planet) {
+    return [f_planet.name, f_planet.diameter];
+}
+
+
+const result = planets.map(planetDates);
+console.log(result);
 
 /**
  * TEST
@@ -79,3 +86,4 @@ let planets = [
 export function tests() {
     return result;
 }
+

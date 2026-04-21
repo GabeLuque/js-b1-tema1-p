@@ -66,7 +66,12 @@ let planets = [
     ]
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
 
+function ringPlanets(f_planet) {
+    return f_planet.hasRings;
+}
 
+const result = planets.filter(ringPlanets);
+console.log(result);
 
 /**
  * TEST
@@ -77,3 +82,4 @@ let planets = [
 export function tests() {
     return result;
 }
+

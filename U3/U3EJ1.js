@@ -23,9 +23,12 @@
 console.log(hypotenuse(3,4));
 
 //Escribe aquí tu solución / escriviu aquí la vostra solució:
-
-
-
+function hypotenuse(f_b, f_a) {
+  function square(f_sq) {
+    return f_sq ** 2;
+  }
+  return (square(f_b) + square(f_a)) ** 0.5;
+}
 
 /**
  * TEST
